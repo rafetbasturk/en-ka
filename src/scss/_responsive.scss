@@ -1,0 +1,52 @@
+@include tablet {
+  .header {
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__menu {
+      display: none !important;
+    }
+
+    &__nav {
+      position: static;
+      height: fit-content !important;
+      width: auto;
+      border: none;
+
+      li {
+        display: inline-block;
+        padding: 0;
+        margin-left: 1.2rem;
+
+        &:hover {
+          padding: 0;
+          background: transparent;
+        }
+
+        &::after {
+          display: block;
+          content: "";
+          width: 50%;
+          margin: auto;
+          margin-top: 0.3rem;
+          border-bottom: 2px solid var(--clr-heading);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform .4s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: right;
+        }
+      }
+    }
+  }
+}
+
+// @include desktop {
+
+// }

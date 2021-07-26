@@ -1,0 +1,76 @@
+// variables
+
+:root {
+    --clr-logo-1: #0072ce;
+    --clr-logo-2: #a7a8a9;
+    --clr-heading: hsl(235, 24%, 19%);
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: var(--clr-heading);
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1.2rem 1.6rem;
+    transition: all 0.3s linear;
+}
+
+// mixin
+
+@mixin link {
+    text-decoration: none;
+    color: var(--clr-heading);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+// responsive
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
