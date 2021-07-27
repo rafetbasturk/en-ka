@@ -50,7 +50,7 @@ const Contact = () => {
             <textarea name="message" id="message" required></textarea>
           </div>
         </div>
-        <button type="submit" className="contact__button">Gönder</button>
+        <button type="submit" className="contact__button" aria-label="send form" >Gönder</button>
       </form>
     </main>
   )

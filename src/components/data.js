@@ -211,11 +211,13 @@ export const social = [
     id: 1,
     url: 'https://www.instagram.com',
     icon: <FaInstagram />,
+    name: "Instagram Icon"
   },
   {
     id: 2,
     url: 'https://www.linkedin.com',
     icon: <FaFacebook />,
+    name: "FAcebook Icon"
   }
 ];
 

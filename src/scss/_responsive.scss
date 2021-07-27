@@ -18,16 +18,17 @@
       width: auto;
       border: none;
 
-      ul {
+      &-container {
         display: flex;
-        width: 550px;
+        gap: 1.6rem;
         padding: 1.6rem 0;
         justify-content: space-between;
       }
 
-      li {
+      p {
         display: inline-block;
         padding: 0;
+        transition: none;
 
         &:hover {
           padding: 0;
@@ -146,6 +147,17 @@
 @include laptop {
   .header {
     padding: 1.6rem 15rem;
+
+    &__nav {
+
+      &-container {
+        gap: 2.4rem
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   .machines {

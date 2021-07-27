@@ -27,9 +27,9 @@ const Footer = () => {
         <div className="footer__social">
           {
             social.map(item => {
-              const { id, url, icon } = item
+              const { id, url, icon, name } = item
               return (
-                <a key={id} href={url} rel="noopener noreferrer" >{icon}</a>
+                <a key={id} href={url} rel="noopener noreferrer" aria-label={name} >{icon}</a>
               )
             })
           }

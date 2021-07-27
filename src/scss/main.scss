@@ -82,7 +82,7 @@ a {
     }
   }
 
-  ul {
+  &__nav-container {
     padding: 1.6rem 0;
   }
 
@@ -93,9 +93,12 @@ a {
     height: 0;
     overflow: hidden;
     transition: all 0.4s linear;
-    border: 2px solid var(--clr-logo-1);
 
-    li {
+    p {
+      padding: 1.2rem 1.6rem;
+      transition: all 0.3s linear;
+      font-size: 1.4rem;
+
       &:hover {
         cursor: pointer;
         background: var(--clr-logo-2);
@@ -423,11 +426,12 @@ a {
 }
 
 .footer {
-  background: var(--clr-white);
+  background: var(--clr-heading);
+  border-radius: 0 7.5rem 0 0;
 
   &__container {
-    background: var(--clr-heading);
     padding: 3rem 1.6rem;
+    background: var(--clr-heading);
     border-radius: 0 7.5rem 0 0;
     max-width: 1440px;
     margin: auto;

@@ -35,12 +35,12 @@ const Home = () => {
       </article>
 
       <div className="main__arrows">
-        <button className="main__left" onClick={prev}>
+        <button className="main__left" onClick={prev} aria-label="Left Arrow">
           <svg width="14" height="24">
             <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fillRule="evenodd" />
           </svg>
         </button>
-        <button className="main__right" onClick={next}>
+        <button className="main__right" onClick={next} aria-label="Right Arrow">
           <svg width="14" height="24">
             <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fillRule="evenodd" />
           </svg>

@@ -65,7 +65,7 @@ const Header = () => {
         </div>
 
         <nav className="header__nav" ref={linksContainerRef} >
-          <ul ref={linksRef} >
+          <div className="header__nav-container" ref={linksRef} >
             {pages.map(page => {
               const { id, url, text } = page
               return (
@@ -81,11 +81,11 @@ const Header = () => {
                     }
                   }}
                 >
-                  <li>{text}</li>
+                  <p>{text}</p>
                 </Link>
               )
             })}
-          </ul>
+          </div>
         </nav>
       </div>
     </header>
