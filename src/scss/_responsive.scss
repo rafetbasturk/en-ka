@@ -1,5 +1,7 @@
 @include tablet {
   .header {
+    padding: 1.6rem 3.2rem;
+
     &__bottom {
       display: flex;
       justify-content: space-between;
@@ -16,10 +18,16 @@
       width: auto;
       border: none;
 
+      ul {
+        display: flex;
+        width: 550px;
+        padding: 1.6rem 0;
+        justify-content: space-between;
+      }
+
       li {
         display: inline-block;
         padding: 0;
-        margin-left: 1.2rem;
 
         &:hover {
           padding: 0;
@@ -35,7 +43,7 @@
           border-bottom: 2px solid var(--clr-heading);
           transform: scaleX(0);
           transform-origin: left;
-          transition: transform .4s ease-in-out;
+          transition: transform 0.4s ease-in-out;
         }
 
         &:hover::after {
@@ -45,8 +53,128 @@
       }
     }
   }
+
+  .contact {
+    &__inputs {
+      justify-content: space-between;
+    }
+
+    &__left {
+      width: 320px;
+      justify-content: space-between;
+    }
+
+    &__right {
+      width: 320px;
+
+      textarea {
+        height: 100%;
+      }
+    }
+  }
+
+  .footer {
+    &__container {
+      padding: 3rem 3.2rem;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    &__logo-container {
+      margin: 0;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &__logo {
+      height: 60px;
+      width: auto;
+    }
+
+    &__social {
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      font-size: 3.2rem;
+    }
+
+    &__nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0 3.2rem;
+      justify-content: space-between;
+      margin: 0;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4;
+
+      span {
+        text-align: left;
+        padding: 1.2rem 0;
+
+        &:hover {
+          transform: scale(1);
+          background-color: transparent;
+        }
+
+        &::after {
+          display: block;
+          content: "";
+          margin: auto;
+          margin-top: 0.6rem;
+          border-bottom: 2px solid var(--clr-white);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.4s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+
+    &__copy {
+      justify-content: flex-end;
+    }
+  }
 }
 
-// @include desktop {
+@include laptop {
+  .header {
+    padding: 1.6rem 15rem;
+  }
 
-// }
+  .machines {
+    &__cards {
+      padding: 5rem 15rem;
+    }
+  }
+
+  .contact {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .ref {
+    max-width: 1440px;
+    margin: auto;
+
+    &__list {
+      padding: 5rem 15rem;
+    }
+  }
+
+  .footer {
+    &__container {
+      padding: 3rem 15rem;
+    }
+
+    &__logo-container {
+      justify-content: flex-start;
+    }
+  }
+}

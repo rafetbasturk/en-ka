@@ -20,28 +20,33 @@ const Contact = () => {
         </a>
 
         <a href="tel:+90 850 644 51 38" className="contact__phone">
-          <FaPhone className="contact-icon" />
+          <FaPhone className="contact-icon" style={{transform: "rotate(225deg"}}/>
           <span>+90 850 644 51 38</span>
         </a>
       </div>
 
       <form className="contact__form">
+            <h3 className="contact__form-title">İletişim Formu</h3>
         <div className="contact__inputs">
           <div className="contact__left">
-            <h3 className="contact__form-title">İletişim Formu</h3>
             <div className="contact__input">
-              <label htmlFor="name">Ad</label>
+              <label htmlFor="name">Ad <sup>*</sup></label>
               <FaUser className="contact-icon" />
               <input type="text" name="name" id="name" required />
             </div>
             <div className="contact__input">
-              <label htmlFor="mail">E-posta</label>
+              <label htmlFor="mail">E-posta <sup>*</sup> </label>
               <FaEnvelope className="contact-icon" />
               <input type="email" name="mail" id="mail" required />
             </div>
+            <div className="contact__input">
+              <label htmlFor="phone">Telefon</label>
+              <FaPhone className="contact-icon" style={{transform: "rotate(90deg"}}/>
+              <input type="phone" name="phone" id="phone" />
+            </div>
           </div>
           <div className="contact__right">
-            <label htmlFor="message">Mesaj</label>
+            <label htmlFor="message">Mesaj <sup>*</sup></label>
             <textarea name="message" id="message" required></textarea>
           </div>
         </div>

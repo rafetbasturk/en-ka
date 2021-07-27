@@ -4,9 +4,8 @@ body {
   font-size: 1.6rem;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  max-width: 1440px;
-  margin: 0 auto;
   color: var(--clr-logo-2);
+  background: rgb(248, 248, 248);
 }
 
 a {
@@ -14,6 +13,8 @@ a {
 }
 
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 1.6rem;
   position: sticky;
@@ -111,6 +112,9 @@ a {
 .main {
   position: relative;
   padding: 3.2rem 0;
+  background: var(--clr-white);
+  max-width: 1440px;
+  margin: 0 auto;
 
   &__info {
     position: absolute;
@@ -163,6 +167,9 @@ a {
 }
 
 .machines {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--clr-white);
   &__title {
     width: 100%;
     height: 350px;
@@ -221,6 +228,8 @@ a {
 }
 
 .ref {
+  background: var(--clr-white);
+
   &__title {
     width: 100%;
     height: 350px;
@@ -232,6 +241,8 @@ a {
     opacity: 0.8;
     padding: 1.6rem;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   &__list {
@@ -241,6 +252,8 @@ a {
     align-items: center;
     gap: 5rem;
     padding: 3.2rem 1.6rem;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   li {
@@ -260,6 +273,7 @@ a {
 }
 
 .contact {
+  background: var(--clr-white);
 
   &__title {
     width: 100%;
@@ -272,6 +286,8 @@ a {
     opacity: 0.8;
     padding: 1.6rem;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   &__info {
@@ -296,20 +312,22 @@ a {
     justify-content: center;
     flex-direction: column;
     gap: 1.6rem;
+    transition: all 0.4s ease;
 
     address,
     span {
       font-weight: 400;
       color: var(--clr-heading);
+      text-align: center;
     }
 
     &:hover {
       background: var(--clr-logo-1);
-      transition: all 0.4s ease-in-out;
 
       .contact-icon,
       address,
       span {
+        transition: all 0.4s ease;
         color: var(--clr-white);
       }
     }
@@ -378,7 +396,6 @@ a {
 
       &:active {
         outline: 2px solid var(--clr-logo-1);
-        
       }
     }
   }
@@ -396,19 +413,25 @@ a {
     &:hover {
       color: var(--clr-white);
       background: var(--clr-logo-1);
-      transition: all .4s linear;
+      transition: all 0.4s linear;
     }
 
     &:active {
-      transform: scale(.95);
+      transform: scale(0.95);
     }
   }
 }
 
 .footer {
-  background: var(--clr-heading);
-  padding: 3rem 1.6rem;
-  border-radius: 0 7.5rem 0 0;
+  background: var(--clr-white);
+
+  &__container {
+    background: var(--clr-heading);
+    padding: 3rem 1.6rem;
+    border-radius: 0 7.5rem 0 0;
+    max-width: 1440px;
+    margin: auto;
+  }
 
   &__logo-container {
     display: flex;
@@ -427,10 +450,17 @@ a {
 
   &__nav {
     margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    li {
+    span {
       color: var(--clr-white);
       text-align: center;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.6rem;
 
       &:hover {
         background: var(--clr-logo-1);
@@ -447,7 +477,7 @@ a {
     margin-bottom: 3.2rem;
 
     a {
-      transition: all 0.4s;
+      transition: all 0.4s ease;
       color: var(--clr-white);
 
       &:hover {
@@ -472,6 +502,5 @@ a {
     left: 0;
   }
 }
-
 
 @import "responsive";

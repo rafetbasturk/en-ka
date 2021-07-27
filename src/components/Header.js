@@ -49,7 +49,7 @@ const Header = () => {
           </a>
 
           <a href="tel:+90 850 644 51 38" className="header__phone">
-            <FaPhone className="header-icon" />
+            <FaPhone className="header-icon" style={{transform: "rotate(90deg"}}/>
             <span>+90 850 644 51 38</span>
           </a>
         </div>
@@ -76,6 +76,8 @@ const Header = () => {
                     if (window.innerWidth < 768) {
                       window.scrollTo(0, 0)
                       setIsNavOpen(!isNavOpen)
+                    } else {
+                      window.scrollTo(0, 0)
                     }
                   }}
                 >
