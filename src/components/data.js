@@ -1,8 +1,14 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa"
 
-import image1 from "../images/home/image1.jpg"
-import image2 from "../images/home/image2.jpg"
-import image3 from "../images/home/image3.jpg"
+import image1_small from "../images/home/image1_small.jpg"
+import image1_medium from "../images/home/image1_medium.jpg"
+import image1_large from "../images/home/image1_large.jpg"
+import image2_small from "../images/home/image2_small.jpg"
+import image2_medium from "../images/home/image2_medium.jpg"
+import image2_large from "../images/home/image2_large.jpg"
+import image3_small from "../images/home/image3_small.jpg"
+import image3_medium from "../images/home/image3_medium.jpg"
+import image3_large from "../images/home/image3_large.jpg"
 
 import machine1 from "../images/machines/akiraseiki.jpeg"
 import machine2 from "../images/machines/hyundaif500.png"
@@ -186,20 +192,26 @@ export const pages = [
 export const pics = [
   {
     id: 1,
-    image: image1,
+    img_small: image1_small,
+    img_medium: image1_medium,
+    img_large: image1_large,
     title: "üretimde kalite",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
   },
   {
     id: 2,
-    image: image2,
+    img_small: image2_small,
+    img_medium: image2_medium,
+    img_large: image2_large,
     title: "profesyonel hizmet",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
 
   },
   {
     id: 3,
-    image: image3,
+    img_small: image3_small,
+    img_medium: image3_medium,
+    img_large: image3_large,
     title: "son teknoloji",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
   }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { pages, social } from "./data"
-import logo from "../images/logo.png"
+import logo from "../images/logo.svg"
 
 const Footer = () => {
 
@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__logo-wrapper" >
-          <img className="footer__logo" src={logo} alt="company logo" />
+          <img className="footer__logo" src={logo} alt="company logo" width="400" height="auto" />
         </div>
         <div className="footer__nav">
           {pages.map(page => {
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <p className="footer__copy">
           <span>© {new Date().getFullYear()}</span>
-          <img src={logo} width="50px" height="auto" alt="company logo" />
+          <img className="footer__logo2" src={logo} width="400" height="auto" alt="company logo" />
           <span>Tüm hakları saklıdır.</span>
         </p>
       </div>

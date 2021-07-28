@@ -21,7 +21,7 @@ const Home = () => {
     return () => clearInterval(intervalSlide)
   }, [index])
 
-  const { id, image, title, quote } = slide
+  const { id, img_small: small, img_medium: medium, img_large: large, title, quote } = slide
 
   return (
     <main className="main">
@@ -31,7 +31,14 @@ const Home = () => {
           <h2 className="main__title" >{title}</h2>
           <p className="main__text" >{quote}</p>
         </div>
-        <img src={image} alt={title} className="main__image" width="100%" height="300px" />
+        <img
+          srcSet={`${small} 320w, ${medium} 768w, ${large} 1200w`}
+          sizes="(max-width: 480px) 320px, (max-width: 1000px) 768px, 1200px"
+          alt={title} className="main__image"
+          src={small}
+          width="100%"
+          height="300px"
+        />
       </article>
 
       <div className="main__arrows">
