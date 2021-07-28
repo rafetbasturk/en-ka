@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <div className="footer__logo-container" >
-          <img className="footer__logo" src={logo} alt="company logo" width="150px" height="auto" />
+        <div className="footer__logo-wrapper" >
+          <img className="footer__logo" src={logo} alt="company logo" />
         </div>
         <div className="footer__nav">
           {pages.map(page => {
             const { id, url, text } = page
             return (
-              <Link
+              <Link className="link"
                 to={url}
                 key={id}
                 onClick={() => window.scrollTo(0, 0)}
