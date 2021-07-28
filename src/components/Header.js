@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { pages } from "./data"
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from "react-icons/fa"
 
 const Header = () => {
@@ -57,7 +57,7 @@ const Header = () => {
 
       <div className="header__bottom">
 
-        <Link to="/"><img className="header__logo" src={logo} alt="company logo" width="400" height="auto" style={isVisible ? { width: "150px" } : { width: "80px" }} /></Link>
+        <Link to="/"><img className="header__logo" src={logo} alt="company logo" width="691" height="361" style={isVisible ? { width: "150px" } : { width: "80px" }} /></Link>
 
         <div className="header__menu">
           {isNavOpen && <FaTimes className="header__close" alt="close icon" onClick={() => setIsNavOpen(!isNavOpen)} />}
