@@ -1,13 +1,14 @@
-import React, {lazy, Suspense} from "react";
+import React, {lazy, Suspense, useEffect, useState} from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 
+import Loading from "./Loading"
 const Header = lazy(() => import("./Header"))
 const Home = lazy(() => import("./Home"))
-const About = lazy(() => import("./About"))
+// const About = lazy(() => import("./About"))
 const Machines = lazy(() => import("./Machines"))
 const References = lazy(() => import("./References"))
 const Contact = lazy(() => import("./Contact"))
@@ -16,18 +17,24 @@ const Footer = lazy(() => import("./Footer"))
 
 
 function App() {
+  const [page, setPage] = useState("Ana Sayfa")
+
+  useEffect(() => {
+    document.title = `Makine Kalıp - ${page}`
+  }, [page])
+
   return (
     <Router>
-      <Suspense fallback={<p>Loading</p>}>
-        <Header />
+      <Suspense fallback={<Loading />}>
+        <Header page={page} setPage={setPage} />
 
         <Switch>
           <Route exact path="/" >
             <Home />
           </Route>
-          <Route path="/about" >
+          {/* <Route path="/about" >
             <About />
-          </Route>
+          </Route> */}
           <Route path="/machines" >
             <Machines />
           </Route>
@@ -42,7 +49,7 @@ function App() {
           </Route>
         </Switch>
 
-        <Footer />
+        <Footer setPage={setPage}/>
       </Suspense>
     </Router>
 

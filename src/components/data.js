@@ -9,57 +9,80 @@ import image2_large from "../images/home/image2_large.jpg"
 import image3_small from "../images/home/image3_small.jpg"
 import image3_medium from "../images/home/image3_medium.jpg"
 import image3_large from "../images/home/image3_large.jpg"
+import image4_small from "../images/home/image4_small.jpg"
+import image4_medium from "../images/home/image4_medium.jpg"
+import image4_large from "../images/home/image4_large.jpg"
+import image5_small from "../images/home/image5_small.jpg"
+import image5_medium from "../images/home/image5_medium.jpg"
+import image5_large from "../images/home/image5_large.jpg"
 
-import machine1 from "../images/machines/akiraseiki.jpeg"
-import machine2 from "../images/machines/hyundaif500.png"
-import machine3 from "../images/machines/akira-seiki.png"
-import machine4 from "../images/machines/powermax.png"
-import machine5 from "../images/machines/yunnan.png"
-import machine6 from "../images/machines/jetko.png"
-import machine7 from "../images/machines/goodway.png"
-import machine8 from "../images/machines/toz-satih.png"
+import machine1 from "../images/machines/akira-seiki-v2.5.jpg"
+import machine2 from "../images/machines/hyundai-f500.jpg"
+import machine3 from "../images/machines/akira-seiki-v4.5.jpg"
+import machine4 from "../images/machines/powermax.jpg"
+import machine5 from "../images/machines/yunnan.jpg"
+import machine6 from "../images/machines/jetko.jpg"
+import machine7 from "../images/machines/goodway.jpg"
+import machine8 from "../images/machines/toz-satih.jpg"
+import machine9 from "../images/machines/hyundai-f4600.jpg"
 
-import a01 from "../images/ref/a01.jpeg"
-import a02 from "../images/ref/a02.jpeg"
-import a03 from "../images/ref/a03.jpeg"
-import a04 from "../images/ref/a04.jpeg"
-import a05 from "../images/ref/a05.jpeg"
-import a06 from "../images/ref/a06.jpeg"
-import a07 from "../images/ref/a07.jpeg"
-import a08 from "../images/ref/a08.jpeg"
-import a09 from "../images/ref/a09.jpeg"
-import a10 from "../images/ref/a10.jpeg"
-import a11 from "../images/ref/a11.jpeg"
-import a12 from "../images/ref/a12.jpeg"
-import a13 from "../images/ref/a13.jpeg"
-import a14 from "../images/ref/a14.jpeg"
-import a15 from "../images/ref/a15.jpeg"
-import a16 from "../images/ref/a16.jpeg"
-import a17 from "../images/ref/a17.jpeg"
-import a18 from "../images/ref/a18.jpeg"
-import a19 from "../images/ref/a19.png"
-import a20 from "../images/ref/a20.jpeg"
-import a21 from "../images/ref/a21.jpeg"
-import a22 from "../images/ref/a22.jpeg"
-import a23 from "../images/ref/a23.jpeg"
-import a24 from "../images/ref/a24.jpeg"
-import a25 from "../images/ref/a25.jpeg"
-import a26 from "../images/ref/a26.jpeg"
-import a27 from "../images/ref/a27.jpeg"
-import a28 from "../images/ref/a28.jpeg"
-import a29 from "../images/ref/a29.jpeg"
-import a30 from "../images/ref/a30.jpeg"
-import a31 from "../images/ref/a31.jpeg"
-import a32 from "../images/ref/a32.jpeg"
-import a33 from "../images/ref/a33.jpeg"
+
+import a01 from "../images/ref/a01.jpg"
+import a02 from "../images/ref/a02.jpg"
+import a03 from "../images/ref/a03.jpg"
+import a04 from "../images/ref/a04.jpg"
+import a05 from "../images/ref/a05.jpg"
+import a06 from "../images/ref/a06.jpg"
+import a07 from "../images/ref/a07.jpg"
+import a08 from "../images/ref/a08.jpg"
+import a09 from "../images/ref/a09.jpg"
+import a10 from "../images/ref/a10.jpg"
+import a11 from "../images/ref/a11.jpg"
+import a12 from "../images/ref/a12.jpg"
+import a13 from "../images/ref/a13.jpg"
+import a14 from "../images/ref/a14.jpg"
+import a15 from "../images/ref/a15.jpg"
+import a16 from "../images/ref/a16.jpg"
+import a17 from "../images/ref/a17.jpg"
+import a18 from "../images/ref/a18.jpg"
+import a19 from "../images/ref/a19.jpg"
+import a20 from "../images/ref/a20.jpg"
+import a21 from "../images/ref/a21.jpg"
+import a22 from "../images/ref/a22.jpg"
+import a23 from "../images/ref/a23.jpg"
+import a24 from "../images/ref/a24.jpg"
+import a25 from "../images/ref/a25.jpg"
+import a26 from "../images/ref/a26.jpg"
+import a27 from "../images/ref/a27.jpg"
+import a28 from "../images/ref/a28.jpg"
+import a29 from "../images/ref/a29.jpg"
+import a30 from "../images/ref/a30.jpg"
+import a31 from "../images/ref/a31.jpg"
+import a32 from "../images/ref/a32.jpg"
+import a33 from "../images/ref/a33.jpg"
 
 export const machines = [
   {
+    id: 0,
+    model: "2021 Model",
+    name: "HYUNDAI F4600 II",
+    desc: "Dik İşleme Merkezi",
+    img: machine9,
+    specs: {
+      spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
+      spec2: "8000 rpm",
+      spec3: "Direct Drive Spindle",
+      spec4: "Dijital Servo",
+      spec5: "3 Eksen Lineer Kızak"
+    },
+    type: "Masuralı Tip"
+  },
+  {
     id: 1,
-    name: "AKİRA SEIKI Performa V2.5",
+    name: "AKIRA SEIKI Performa V2.5",
     desc: "Dik İşleme Merkezi",
     img: machine1,
-    model: "2019 MODEL",
+    model: "2019 Model",
     specs: {
       spec1: "X-Y-Z Eksen Hareketleri: 760-435-520 mm",
       spec2: "12000 rpm",
@@ -74,7 +97,7 @@ export const machines = [
     name: "HYUNDAI F500 PLUS",
     desc: "Dik İşleme Merkezi",
     img: machine2,
-    model: "2015 MODEL",
+    model: "2016 Model",
     specs: {
       spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
       spec2: "8000 rpm",
@@ -89,7 +112,7 @@ export const machines = [
     name: "AKIRA SEIKI Performa V4.5",
     desc: "Dik İşleme Merkezi",
     img: machine3,
-    model: "2015 MODEL",
+    model: "2015 Model",
     specs: {
       spec1: "X-Y-Z Eksen Hareketleri: 1150-650-650 mm",
       spec2: "12000 rpm",
@@ -104,7 +127,7 @@ export const machines = [
     name: "POWER MAX SV-105 L",
     desc: "Dik İşleme Merkezi",
     img: machine4,
-    model: "2014 MODEL",
+    model: "2014 Model",
     specs: {
       spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
       spec2: "10000 rpm",
@@ -117,7 +140,7 @@ export const machines = [
     name: "YUNNAN CY 6250 B Universal",
     desc: "Torna Tezgahı",
     img: machine5,
-    model: "2014 MODEL",
+    model: "2014 Model",
     specs: {
       spec1: "Çap: 500 mm",
       spec2: "Boy: 2000 mm",
@@ -158,7 +181,6 @@ export const machines = [
       spec1: "X-Y-Z Eksen Hareketleri: 900-380-200 mm",
     },
   },
-
 ]
 
 export const pages = [
@@ -167,11 +189,11 @@ export const pages = [
     url: "/",
     text: "Ana Sayfa"
   },
-  {
-    id: 2,
-    url: "/about",
-    text: "Hakkımızda"
-  },
+  // {
+  //   id: 2,
+  //   url: "/about",
+  //   text: "Hakkımızda"
+  // },
   {
     id: 3,
     url: "/machines",
@@ -214,56 +236,72 @@ export const pics = [
     img_large: image3_large,
     title: "son teknoloji",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
+  },
+  {
+    id: 4,
+    img_small: image4_small,
+    img_medium: image4_medium,
+    img_large: image4_large,
+    title: "son teknoloji",
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
+  },
+  {
+    id: 5,
+    img_small: image5_small,
+    img_medium: image5_medium,
+    img_large: image5_large,
+    title: "son teknoloji",
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
   }
 ]
 
 export const social = [
   {
     id: 1,
-    url: 'https://www.instagram.com',
+    url: 'https://www.instagram.com/p/CEUlB6BJCIv/',
     icon: <FaInstagram />,
     name: "Instagram Icon"
   },
   {
     id: 2,
-    url: 'https://www.linkedin.com',
+    url: 'https://www.facebook.com/enkamakinakalip',
     icon: <FaFacebook />,
     name: "FAcebook Icon"
   }
 ];
 
 export const references = [
-  { id: 1, url: a01 },
-  { id: 2, url: a02 },
-  { id: 3, url: a03 },
-  { id: 4, url: a04 },
-  { id: 5, url: a05 },
-  { id: 6, url: a06 },
-  { id: 7, url: a07 },
-  { id: 8, url: a08 },
-  { id: 9, url: a09 },
-  { id: 10, url: a10 },
-  { id: 11, url: a11 },
-  { id: 12, url: a12 },
-  { id: 13, url: a13 },
-  { id: 14, url: a14 },
-  { id: 15, url: a15 },
-  { id: 16, url: a16 },
-  { id: 17, url: a17 },
-  { id: 18, url: a18 },
-  { id: 19, url: a19 },
-  { id: 20, url: a20 },
-  { id: 21, url: a21 },
-  { id: 22, url: a22 },
-  { id: 23, url: a23 },
-  { id: 24, url: a24 },
-  { id: 25, url: a25 },
-  { id: 26, url: a26 },
-  { id: 27, url: a27 },
-  { id: 28, url: a28 },
-  { id: 29, url: a29 },
-  { id: 30, url: a30 },
-  { id: 31, url: a31 },
-  { id: 32, url: a32 },
-  { id: 33, url: a33 },
+  { id: 1, url: a01, alt: "reference company's logo" },
+  { id: 2, url: a02, alt: "reference company's logo" },
+  { id: 3, url: a03, alt: "reference company's logo" },
+  { id: 4, url: a04, alt: "reference company's logo" },
+  { id: 5, url: a05, alt: "reference company's logo" },
+  { id: 6, url: a06, alt: "reference company's logo" },
+  { id: 7, url: a07, alt: "reference company's logo" },
+  { id: 8, url: a08, alt: "reference company's logo" },
+  { id: 9, url: a09, alt: "reference company's logo" },
+  { id: 10, url: a10, alt: "reference company's logo" },
+  { id: 11, url: a11, alt: "reference company's logo" },
+  { id: 12, url: a12, alt: "reference company's logo" },
+  { id: 13, url: a13, alt: "reference company's logo" },
+  { id: 14, url: a14, alt: "reference company's logo" },
+  { id: 15, url: a15, alt: "reference company's logo" },
+  { id: 16, url: a16, alt: "reference company's logo" },
+  { id: 17, url: a17, alt: "reference company's logo" },
+  { id: 18, url: a18, alt: "reference company's logo" },
+  { id: 19, url: a19, alt: "reference company's logo" },
+  { id: 20, url: a20, alt: "reference company's logo" },
+  { id: 21, url: a21, alt: "reference company's logo" },
+  { id: 22, url: a22, alt: "reference company's logo" },
+  { id: 23, url: a23, alt: "reference company's logo" },
+  { id: 24, url: a24, alt: "reference company's logo" },
+  { id: 25, url: a25, alt: "reference company's logo" },
+  { id: 26, url: a26, alt: "reference company's logo" },
+  { id: 27, url: a27, alt: "reference company's logo" },
+  { id: 28, url: a28, alt: "reference company's logo" },
+  { id: 29, url: a29, alt: "reference company's logo" },
+  { id: 30, url: a30, alt: "reference company's logo" },
+  { id: 31, url: a31, alt: "reference company's logo" },
+  { id: 32, url: a32, alt: "reference company's logo" },
+  { id: 33, url: a33, alt: "reference company's logo" },
 ]

@@ -5,6 +5,7 @@ const Machines = () => {
     <main className="machines" >
       <div className="machines__title">
         <h1>Makine Parkuru</h1>
+        <span className="material-icons">precision_manufacturing</span>
       </div>
       <div className="machines__cards">
         {

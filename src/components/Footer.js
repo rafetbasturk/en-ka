@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { pages, social } from "./data"
 import logo from "../images/logo.png"
 
-const Footer = () => {
+const Footer = ({setPage}) => {
 
   return (
     <footer className="footer">
@@ -11,15 +11,19 @@ const Footer = () => {
           <img className="footer__logo" src={logo} alt="company logo" width="691" height="361" />
         </div>
         <div className="footer__nav">
-          {pages.map(page => {
-            const { id, url, text } = page
+          {pages.map(item => {
+            const { id, url, text } = item
             return (
-              <Link className="link"
+              <Link
+                className="footer__link"
                 to={url}
                 key={id}
-                onClick={() => window.scrollTo(0, 0)}
+                onClick={() => {
+                  setPage(text)
+                  window.scrollTo(0, 0)
+                }}
               >
-                <span>{text}</span>
+                {text}
               </Link>
             )
           })}
@@ -29,7 +33,14 @@ const Footer = () => {
             social.map(item => {
               const { id, url, icon, name } = item
               return (
-                <a key={id} href={url} rel="noopener noreferrer" aria-label={name} >{icon}</a>
+                <a 
+                  key={id}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                >{icon}
+                </a>
               )
             })
           }

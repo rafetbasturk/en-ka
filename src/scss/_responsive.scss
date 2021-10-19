@@ -41,7 +41,7 @@
           width: 50%;
           margin: auto;
           margin-top: 0.3rem;
-          border-bottom: 2px solid var(--clr-heading);
+          border-bottom: 2px solid var(--clr-logo-1);
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.4s ease-in-out;
@@ -57,14 +57,30 @@
 
   .main {
     padding: 3.2rem;
+    height: 500px;
 
-    &__image {
-      height: 500px;
+    &__slide {
+      display: flex;
     }
 
-    &__arrows {
+    &__info {
+      top: 3.2rem;
+      left: 3.2rem;
+      width: calc(100% - 6.4rem);
+      height: 100%;
+    }
+
+    &__left {
+      left: 3.2rem;
+    }
+  
+    &__right {
       right: 3.2rem;
     }
+  }
+
+  .intro {
+    padding: 4.8rem 3.2rem;
   }
 
   .contact {
@@ -122,35 +138,27 @@
       grid-column: 1 / 2;
       grid-row: 2 / 4;
 
-      span {
+      a {
         text-align: left;
         padding: 0;
-
-        &:hover {
-          transform: scale(1);
-          background-color: transparent;
-        }
-
-        &::after {
-          display: block;
-          content: "";
-          margin: auto;
-          margin-top: 0.6rem;
-          border-bottom: 2px solid var(--clr-white);
-          transform: scale(0);
-          transform-origin: left;
-          transition: transform 0.4s ease-in-out;
-        }
-
-        &:hover::after {
-          transform: scale(1);
-          transform-origin: left;
-        }
       }
     }
 
     &__copy {
       justify-content: flex-end;
+    }
+  }
+
+  .active {
+    &::after {
+      display: block;
+      content: "";
+      width: 50%;
+      margin: auto;
+      margin-top: -0.2rem;
+      border-bottom: 2px solid var(--clr-logo-1);
+      transform-origin: left;
+      transition: transform 0.4s ease-in-out;
     }
   }
 }
@@ -174,13 +182,22 @@
   .main {
     padding: 3.2rem 15rem;
 
-    &__image {
-      height: 600px;
+    &__info {
+      left: 15rem;
+      width: calc(100% - 30rem);
     }
 
-    &__arrows {
+    &__left {
+      left: 15rem;
+    }
+  
+    &__right {
       right: 15rem;
     }
+  }
+
+  .intro {
+    padding: 6rem 15rem;
   }
 
   .machines {
@@ -201,6 +218,11 @@
     &__list {
       padding: 5rem 15rem;
     }
+  }
+
+  .about {
+    max-width: 1440px;
+    margin: auto;
   }
 
   .footer {

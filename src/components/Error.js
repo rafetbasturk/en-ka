@@ -1,8 +1,10 @@
 const Error = () => {
   return (
-    <div>
-      Error
-    </div>
+    <main className="error">
+      <div className="error__message">
+        Sayfa Bulunamadı.
+      </div>
+    </main>
   )
 }
 
