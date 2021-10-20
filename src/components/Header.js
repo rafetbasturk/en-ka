@@ -25,7 +25,7 @@ const Header = ({ page, setPage }) => {
   const logoContainer = useRef(null)
 
   const listenToScroll = () => {
-    const heightToHide = 50
+    const heightToHide = 10
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     (winScroll > heightToHide) ? setIsVisible(false) : setIsVisible(true)
   }
@@ -64,13 +64,15 @@ const Header = ({ page, setPage }) => {
 
       <div className="header__bottom">
         <Link to="/">
-          <img
-            className="header__logo"
-            src={logo}
-            alt="company logo"
-            ref={logoContainer}
-            onClick={() => setPage("Ana Sayfa")}
-          />
+          <div className="header__logo-container">
+            <img
+              className="header__logo"
+              src={logo}
+              alt="company logo"
+              ref={logoContainer}
+              onClick={() => setPage("Ana Sayfa")}
+            />
+          </div>
         </Link>
 
         <div className="header__menu">

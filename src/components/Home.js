@@ -45,8 +45,8 @@ const Home = () => {
           <img
             loading={index !== 0 ? "lazy" : "eager"}
             className="main__image"
-            srcSet={`${small} 400w, ${medium} 600w, ${large} 800w`}
-            sizes="(min-width: 1520px) 1140px, (min-width: 1200px) calc(80vw - 60px), calc(96.36vw - 21px)"
+            srcSet={`${small} 500w, ${medium} 800w, ${large} 2000w`}
+            sizes="(min-width: 1520px) 1140px, (min-width: 1200px) calc(80vw - 60px), (min-width: 780px) calc(100vw - 64px), 100vw"
             alt={title}
             src={small}
             width="100%"
