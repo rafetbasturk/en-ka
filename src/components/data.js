@@ -258,7 +258,7 @@ export const pics = [
 export const social = [
   {
     id: 1,
-    url: 'https://www.instagram.com/p/CEUlB6BJCIv/',
+    url: 'https://www.instagram.com/enkamakina/',
     icon: <FaInstagram />,
     name: "Instagram Icon"
   },

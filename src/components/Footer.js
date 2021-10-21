@@ -8,7 +8,12 @@ const Footer = ({setPage}) => {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__logo-wrapper" >
-          <img className="footer__logo" src={logo} alt="company logo" width="691" height="361" />
+          <img
+            className="footer__logo"
+            src={logo}
+            alt="company logo"
+            width="100"
+            height="53" />
         </div>
         <div className="footer__nav">
           {pages.map(item => {
@@ -47,7 +52,7 @@ const Footer = ({setPage}) => {
         </div>
         <p className="footer__copy">
           <span>© {new Date().getFullYear()}</span>
-          <img className="footer__logo2" src={logo} width="691" height="361" alt="company logo" />
+          <img className="footer__logo2" src={logo} width="50" height="27" alt="company logo" />
           <span>Tüm hakları saklıdır.</span>
         </p>
       </div>

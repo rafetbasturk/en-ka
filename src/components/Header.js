@@ -29,7 +29,7 @@ const Header = ({ page, setPage }) => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     (winScroll > heightToHide) ? setIsVisible(false) : setIsVisible(true)
   }
-  
+
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
 
@@ -40,7 +40,7 @@ const Header = ({ page, setPage }) => {
       topContainerRef.current.style.height = "0"
       logoContainer.current.style.width = "80px"
     }
-    
+
     return () =>
       window.removeEventListener("scroll", listenToScroll);
   }, [isVisible])
@@ -56,7 +56,7 @@ const Header = ({ page, setPage }) => {
           </a>
 
           <a href="tel:+90 850 644 51 38" className="header__phone">
-            <FaPhone className="header-icon"/>
+            <FaPhone className="header-icon" />
             <span>+90 850 644 51 38</span>
           </a>
         </div>
@@ -64,15 +64,15 @@ const Header = ({ page, setPage }) => {
 
       <div className="header__bottom">
         <Link to="/">
-          <div className="header__logo-container">
-            <img
-              className="header__logo"
-              src={logo}
-              alt="company logo"
-              ref={logoContainer}
-              onClick={() => setPage("Ana Sayfa")}
-            />
-          </div>
+          <img
+            width="120"
+            height="63"
+            className="header__logo"
+            src={logo}
+            alt="company logo"
+            ref={logoContainer}
+            onClick={() => setPage("Ana Sayfa")}
+          />
         </Link>
 
         <div className="header__menu">
