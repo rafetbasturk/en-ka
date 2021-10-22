@@ -1,5 +1,6 @@
 {
   "name": "en-ka",
+  "homepage": "http://en-ka.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

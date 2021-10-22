@@ -66,7 +66,7 @@ const Header = ({ page, setPage }) => {
         <Link to="/">
           <img
             width="120"
-            height="63"
+            height="auto"
             className="header__logo"
             src={logo}
             alt="company logo"

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { pages, social } from "./data"
 import logo from "../images/logo.png"
+import logo1 from "../images/logo1.png"
 
 const Footer = ({setPage}) => {
 
@@ -12,8 +13,7 @@ const Footer = ({setPage}) => {
             className="footer__logo"
             src={logo}
             alt="company logo"
-            width="100"
-            height="53" />
+          />
         </div>
         <div className="footer__nav">
           {pages.map(item => {
@@ -52,7 +52,7 @@ const Footer = ({setPage}) => {
         </div>
         <p className="footer__copy">
           <span>© {new Date().getFullYear()}</span>
-          <img className="footer__logo2" src={logo} width="50" height="27" alt="company logo" />
+          <img className="footer__logo2" src={logo1} alt="company logo" />
           <span>Tüm hakları saklıdır.</span>
         </p>
       </div>
