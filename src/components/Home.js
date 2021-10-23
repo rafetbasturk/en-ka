@@ -30,10 +30,8 @@ const Home = () => {
     img_small: small,
     img_medium: medium,
     img_large: large,
-    title,
-    // quote
+    title
   } = slide
-  // const { id, img_small: small, title, quote } = slide
 
   return (
     <>
@@ -53,10 +51,9 @@ const Home = () => {
             height="auto"
           />
 
-          {/* <div className="main__info-container">
-            <div className="main__info">
+          <div className="main__info-container">
+            <div className="main__title-container">
               <h2 className="main__title" >{title}</h2>
-              <p className="main__text" >{quote}</p>
             </div>
             <div className="main__dots">
               {
@@ -72,7 +69,7 @@ const Home = () => {
                 })
               }
             </div>
-          </div> */}
+          </div>
         </section>
 
         <button className="main__left" onClick={prev} aria-label="left arrow">

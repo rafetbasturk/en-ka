@@ -12,9 +12,6 @@ import image3_large from "../images/home/image3_large.jpg"
 import image4_small from "../images/home/image4_small.jpg"
 import image4_medium from "../images/home/image4_medium.jpg"
 import image4_large from "../images/home/image4_large.jpg"
-import image5_small from "../images/home/image5_small.jpg"
-import image5_medium from "../images/home/image5_medium.jpg"
-import image5_large from "../images/home/image5_large.jpg"
 
 import machine1 from "../images/machines/akira-seiki-v2.5.jpg"
 import machine2 from "../images/machines/hyundai-f500.jpg"
@@ -189,23 +186,18 @@ export const pages = [
     url: "/",
     text: "Ana Sayfa"
   },
-  // {
-  //   id: 2,
-  //   url: "/about",
-  //   text: "Hakkımızda"
-  // },
   {
-    id: 3,
+    id: 2,
     url: "/machines",
     text: "Makine Parkuru"
   },
   {
-    id: 4,
+    id: 3,
     url: "/references",
     text: "Referanslar"
   },
   {
-    id: 5,
+    id: 4,
     url: "/contact",
     text: "İletişim"
   },
@@ -234,7 +226,7 @@ export const pics = [
     img_small: image3_small,
     img_medium: image3_medium,
     img_large: image3_large,
-    title: "son teknoloji",
+    title: "uluslararası standart",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
   },
   {
@@ -245,14 +237,6 @@ export const pics = [
     title: "son teknoloji",
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
   },
-  {
-    id: 5,
-    img_small: image5_small,
-    img_medium: image5_medium,
-    img_large: image5_large,
-    title: "son teknoloji",
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nobis."
-  }
 ]
 
 export const social = [
