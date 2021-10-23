@@ -65,7 +65,7 @@
       top: 3.2rem;
       left: 3.2rem;
       width: calc(100% - 6.4rem);
-      height: calc(100% - 6.4rem);
+      height: calc(100%);
     }
 
     &__left {
@@ -77,7 +77,7 @@
     }
 
     &__dots {
-      bottom: 4rem;
+      bottom: .8rem;
     }
   }
 
@@ -191,6 +191,7 @@
     &__title-container {
       left: 15rem;
       width: calc(100% - 30rem);
+      height: calc(100% - 6.4rem);
       padding: 3.2rem;
     }
 
@@ -204,6 +205,10 @@
   
     &__right {
       right: 15rem;
+    }
+
+    &__dots {
+      bottom: 4rem;
     }
   }
 
