@@ -1,3 +1,4 @@
+import React from "react"
 import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 import image1_small from "../images/home/image1_small.jpg"
@@ -66,13 +67,13 @@ export const machines = [
     desc: "Dik İşleme Merkezi",
     img: machine9,
     specs: {
-      spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
+      spec1: "X-Y-Z Eksen Hareketi: 900-460-520 mm",
       spec2: "8000 rpm",
       spec3: "Direct Drive Spindle",
       spec4: "Dijital Servo",
       spec5: "3 Eksen Lineer Kızak"
     },
-    type: "Masuralı Tip"
+    type: "Masuralı Lineer"
   },
   {
     id: 1,
@@ -81,13 +82,13 @@ export const machines = [
     img: machine1,
     model: "2019 Model",
     specs: {
-      spec1: "X-Y-Z Eksen Hareketleri: 760-435-520 mm",
+      spec1: "X-Y-Z Eksen Hareketi: 760-435-520 mm",
       spec2: "12000 rpm",
       spec3: "Direct Drive Spindle",
       spec4: "Dijital Servo",
       spec5: "3 Eksen Lineer Kızak"
     },
-    type: "Masuralı Tip"
+    type: "Masuralı"
   },
   {
     id: 2,
@@ -96,13 +97,13 @@ export const machines = [
     img: machine2,
     model: "2016 Model",
     specs: {
-      spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
+      spec1: "X-Y-Z Eksen Hareketi: 1050-600-600 mm",
       spec2: "8000 rpm",
       spec3: "Direct Drive Spindle",
       spec4: "Dijital Servo",
       spec5: "3 Eksen Lineer Kızak"
     },
-    type: "Masuralı Tip"
+    type: "Masuralı"
   },
   {
     id: 3,
@@ -111,13 +112,13 @@ export const machines = [
     img: machine3,
     model: "2015 Model",
     specs: {
-      spec1: "X-Y-Z Eksen Hareketleri: 1150-650-650 mm",
+      spec1: "X-Y-Z Eksen Hareketi: 1150-650-650 mm",
       spec2: "12000 rpm",
       spec3: "Direct Drive Spindle",
       spec4: "Dijital Servo",
       spec5: "3 Eksen Lineer Kızak Roller"
     },
-    type: "Masuralı Tip"
+    type: "Masuralı"
   },
   {
     id: 4,
@@ -126,11 +127,11 @@ export const machines = [
     img: machine4,
     model: "2014 Model",
     specs: {
-      spec1: "X-Y-Z Eksen Hareketleri: 1050-600-600 mm",
+      spec1: "X-Y-Z Eksen Hareketi: 1050-600-600 mm",
       spec2: "10000 rpm",
       spec3: "Direct Drive Spindle"
     },
-    type: "Masuralı Tip"
+    type: "Masuralı"
   },
   {
     id: 5,

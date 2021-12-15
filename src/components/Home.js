@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { pics } from "./data"
 import { ImQuestion } from "react-icons/im"
 import { BiNetworkChart } from "react-icons/bi"
@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const intervalSlide = setInterval(() => {
       setIndex(index === pics.length - 1 ? 0 : index + 1)
-    }, 10000);
+    }, 5000);
     setSlide(pics[index])
 
     return () => clearInterval(intervalSlide)

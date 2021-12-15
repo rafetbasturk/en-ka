@@ -1,3 +1,4 @@
+import React from "react"
 import { Link } from "react-router-dom"
 import { pages, social } from "./data"
 import logo from "../images/logo.png"

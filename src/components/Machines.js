@@ -1,3 +1,4 @@
+import React from "react"
 import { machines } from "./data"
 
 const Machines = () => {
